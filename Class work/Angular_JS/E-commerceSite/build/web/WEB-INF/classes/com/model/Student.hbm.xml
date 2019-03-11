@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 28, 2018 9:22:40 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.model.Student" table="student" catalog="shopdb" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="45" />
+        </property>
+        <property name="stock" type="string">
+            <column name="stock" length="45" />
+        </property>
+        <property name="date" type="string">
+            <column name="date" length="45" />
+        </property>
+        <property name="uprice" type="string">
+            <column name="uprice" length="45" />
+        </property>
+        <property name="totoaprice" type="string">
+            <column name="totoaprice" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
