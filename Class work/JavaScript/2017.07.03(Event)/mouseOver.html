@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			function m1(){
+				document.getElementById("tf1").style.color="red";
+				document.getElementById("tf2").style.backgroundColor="green";
+				
+			}
+			function m2(){
+				document.getElementById("tf1").style.color="green";
+				document.getElementById("tf2").style.backgroundColor="red";
+				
+			}
+			function m3(){
+				document.getElementById("tf1").style.color="pink";
+				document.getElementById("tf2").style.backgroundColor="yellow";
+				
+			}
+			function m4(){
+				document.getElementById("tf1").style.color="blue";
+				document.getElementById("tf2").style.backgroundColor="pink";
+				
+			}
+		</script>
+	</head>
+	<body>
+			Name:<input type="text" id="tf1" name="n1" value="Mohammad Moniruzzaman" /><br/><br/>
+			ID:<input type="text" id="tf2" name="n2" value="1224897"/><br/><br/>
+			<input type="submit" value="click" onmouseover="m1()" onmouseup="m2()" onmousedown="m3()" onmouseleave="m4()"/>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+	<script>
+		var b=parseInt(prompt("Enter the lowest value"));
+		var p=parseInt(prompt("Enter highest value"));
+		var pn=0;
+		var d=0;
+		var a=new Array;
+		for(n=b;n<=p;n++){
+			var c=0;
+			for(i=1;i<=n;i++){
+				k=n%i;
+				if(k==0){
+					c++;
+				}
+			}
+				if(c==2){
+					pn++;
+					a[d]=n;
+					d++;
+				}
+				
+		}	
+					document.write("The amount of prime number : "+pn);
+					for(j=0;j<pn;j++){
+					document.write("<br/>the prime number: "+a[j]);
+					}
+	</script>	
+	</body>
+</html>

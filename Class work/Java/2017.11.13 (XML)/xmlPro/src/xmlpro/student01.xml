@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+<!DOCTYPE student
+[
+<!ELEMENT student (id, email, phone)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+]
+>
+<student>
+    <id>345</id>
+    <email>monir@gmail.com</email>
+    <phone>dhaka</phone>
+</student>

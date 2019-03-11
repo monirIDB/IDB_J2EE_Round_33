@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			var i=parseInt(window.prompt("Enter Number"));
+			var r=fact(i);
+			document.write(r);
+			function fact(n){
+				if(n<=1){
+					return 1;
+				}else{
+					return n*fact(n-1);
+				}
+			}
+		</script>
+	</body>
+</html>

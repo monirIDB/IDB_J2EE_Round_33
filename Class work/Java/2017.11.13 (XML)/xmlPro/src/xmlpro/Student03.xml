@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE student 
+[
+<!ATTLIST student
+    id CDATA #REQUIRED
+    email CDATA #REQUIRED
+    phone CDATA #REQUIRED
+>
+]
+>
+<student id="12" email="monir@gmail.com" phone="857564"></student>

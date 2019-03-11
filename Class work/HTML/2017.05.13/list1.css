@@ -1,0 +1,23 @@
+div{
+	border:1px solid blue;
+	width:30%;
+	background-color:orange;
+	
+}
+a{
+	text-decoration:none;
+	color:green;
+	target:new-tab;
+}
+#u1{
+    list-style:square;
+	color:red;
+	background-color:yellow;
+	}
+#u2{
+	color:blue;
+	background-color:pink;
+}
+#o2{
+	list-style:lower-alpha;
+}

@@ -1,0 +1,12 @@
+
+
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE student SYSTEM "my.dtd">
+<student>
+    <id>345</id>
+    <email>monir@gmail.com</email>
+    <address>dhaka</address>
+</student>
+ 

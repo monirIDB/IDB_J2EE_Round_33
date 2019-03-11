@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT student (id, email, phone)>
+<!ELEMENT id(#PCDATA)>
+<!ELEMENT email(#PCDATA)>
+<!ELEMENT phone(#PCDATA)>
+

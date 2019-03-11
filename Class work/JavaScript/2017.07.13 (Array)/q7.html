@@ -1,0 +1,62 @@
+<!doctype>
+<html>
+	<head>
+	</head>
+	<body>
+	
+		
+		Email:<input type="text" id="d1"/>
+		
+		password:<input type="password" id="d2"/>
+		confirm password:<input type="password" id="d3"/>
+		<input type="submit" id="d4" value="Submit" onclick="m1()"/>
+		<input type="submit" id="d5" value="Close" onclick="m2()"/>
+		<script>
+			function m1(){
+				var a=document.getElementById("d1").value;
+				var b=document.getElementById("d2").value;
+				var c=document.getElementById("d3").value;
+				if((m3(a)) & (m4(b)) & (m5(c))){
+					d=window.open("","name","height=300, width=300");
+					d.document.write("Email: "+a+"<br/>"+"Password: "+b+"<br/>"+"Confirm Password: "+c);
+					d.document.close();
+				}
+			}
+			function m2(){
+				d.window.close();
+			}
+			function m3(aa){
+				var e=/^[A-Za-z0-9]+\@[a-z0-9]+\.[a-z]{2,4}$/;
+				if(aa.match(e)){
+					alert("Email is ok");
+					return true;
+				}else{
+					alert("Email is not ok");
+					return false;
+				}
+			}
+			function m4(bb){
+				var f=/^[0-9]{6,10}$/;
+				if(bb.match(f)){
+					
+					return true;
+				}else{
+					alert("Password is not ok");
+					return false;
+				}
+			}
+			function m5(cc){
+				var t=document.getElementById("d2").value;
+				if(cc.match(t)){
+					alert("Password confirm");
+					return true;
+				}else{
+					alert("Password not match");
+					return false;
+				}
+			}
+			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,562 @@
+/* --------------Ahasan----------------*/
+/*-----Home + electroninc banking-----*/
+#homlayout{width:100%; overflow:hidden}
+.addcl-1 strong{display:block}
+h3, h4, h5, a, .panel-group .panel-heading a{color: #2c318d;}
+#footer .footer-copyright p{margin-top:10px}
+.addnewswrap h4{line-height:22px; font-size:16px; height:48px; overflow:hidden}
+.addnewswrap h4 span{display:block; color:#010101; font-size:11px; padding:5px 0}
+.addnewswrap p{text-align:justify; font-size:13px; line-height:18px; padding-bottom:14px; margin-bottom:0; height:58px; overflow:hidden}
+
+.addnewswrap .featurednews p{height:auto}
+
+.billboardAdd, .popup-gallery{width:100%; height:180px; overflow:hidden; padding-top:0; padding-bottom:0;}
+.billboardAdd a{float:left;width:49%; margin:10px 0.5%;}
+.billboardAdd img{width:100%; height:150px; display:block}
+
+#myElement{width:100% !important}
+
+.center, .addnewswrap .center p{text-align:center; padding-bottom:0}
+.addnewswrap .center p a{font-weight:normal}
+.bbcircularlist ul{text-align:left; padding:20px 10px 10px}
+.stl, .stb, .lfb{color:#FFF !important}
+.lfb{color:#fff !important}
+
+/*.baneritem1 .stl, .baneritem1 .stb, .baneritem1 .lfb{color:#000 !important}*/
+.displayNone{display:none}
+#footer.homefoter{margin-top:0}
+.footer-copyright{position:relative;top:-60px}
+.col-md-offset-1{position:relative; z-index:5}
+.breadcrumb a{color:#093}
+.fleft, .sidefleft, .tvaddwrap{float:left}
+ol.playerList{padding-right:20px; margin-left:10px }
+ol.playerList li a{cursor:pointer}
+.tvad{width:300px; height:250px; margin-top:10px; border:2px solid #000; padding:10px}
+
+
+.fullwidthimg{width:100%}
+
+hr.tall , hr{margin: 30px 0 25px;}
+h2{margin-bottom:22px}
+address.address{color:#333}
+.pdftable{width:100%; margin-bottom:10px}
+.pdftable tr td, .pdftable tr th{border:1px solid #ddd; padding:5px}
+/*.pdftable tr td:hover{background:#bbd9ee}*/
+.pdftable tr td:first-child{padding-left:10px}
+
+.pdftable td td{border:0; padding-top:0}
+/*.pdftable tr.even,*/
+.pdftable tr:nth-child(even){background:#F4F4F4;}
+/*.pdftable tr.even td{color:#333}*/
+.pdftable th{font-weight:bold}
+.roundimage{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.internetbankingftrs p strong{display:block;}
+.internetbankingftrs p em{font-style:normal; font-size:12px}
+section.toggle.active > label{border-color:#f5f5f5}
+.clear{clear:both}
+.pdftable td p{margin-bottom:0}
+/*-----retail banking-----*/
+.block{
+	padding:5px 0;
+	margin:0;
+}
+.block h5{padding-bottom:4px; margin-bottom:6px; border-bottom:1px solid #2C318D}
+.block a{display:block; font-size:13px}
+.block a:hover{color:#333; text-decoration:none; font-weight:bold}
+.block:last-child{border-bottom:1px solid #2C318D}
+span.need{display:block; padding-top:10px}
+.linediv h4 em{font-size:14px; font-style:normal; line-height:29px}
+.reatailimage{width:100%; height:130px}
+.linediv .pdftable tr td:first-child{width:25%} 
+
+.futureline{width:100%; overflow:hidden}
+.futureline .block h5{border-bottom:0; margin-bottom:14px}
+.futureline .block {border-bottom:0; margin-bottom:10px}
+.futureline hr{margin:0px 0 10px}
+.futureline .block span{display:block; padding:10px 0}
+
+.scholarshipwrap{width:100%; padding:20px 0}
+.scholarshipwrap h5{position:relative; line-height:30px; margin-bottom:10px}
+.scholarshipwrap h5 a{display:block; padding-left:35px}
+.scholarshipwrap h5 img{position:absolute; left:10px; top:7px}
+
+
+.hidediv{display:none; padding:0 10px 0 20px; border:1px solid #ddd}
+.hidediv p{margin-bottom:10px}
+.hidediv p a{display:block; margin-bottom:10px}
+
+#next_pre{padding-bottom:20px; width:100% !important; overflow:hidden; float:none !important}
+
+.faquestion strong{display:block; padding-bottom:10px}
+.faquestion p strong{display:inline}
+.faquestion  ul{list-style:none; padding-left:20px}
+ol{padding-left:20px; margin-left:0}
+.titletext{line-height:30px; font-size:24px; display:block; padding-bottom:15px}
+
+tr.headtitle{background-color:#ddd;font-size:10pt; font-weight:bold; color:#000}
+.hdtitle2{background:#ddd; color:#000}
+
+.rightmargin{
+	margin:0 38px 10px 0px; border:3px solid #333; 
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 13px 5px -7px #000;
+	   -moz-box-shadow: 0px 13px 5px -7px #000;
+	   box-shadow: 0px 13px 5px -7px #000;
+			
+			
+}
+.pull-right{margin-left:38px; margin-bottom:0px}
+.textblock{overflow:hidden; width:100%}
+/*.textblock p{text-align:justify}*/
+.newswrap{width:100%; overflow:hidden}
+.customcolumn hr.tall{margin:5px 0 20px}
+.paddingtoprow{padding:20px 0 0}
+
+.thumb-info .thumb-info-title{font-size:14px}
+.allcard .thumb-info img{width:100%}
+span.note{font-size:13px}
+
+section.toggle.active > label {border-color: #0088cc;}
+.customimage a.thumb-info{overflow:visible}
+.customimage a img{width:100%; height:100px; margin:5px 0 10px}
+.pdftable .col-md-2{width:100%}
+.pdftable .col-md-2 img{width:100%}
+.awardtbl td{width:20%}
+ul.social-icons li.twitter{display:none}
+h4.socialcause{padding-top:10px}
+.blog .entry{margin-bottom:15px}
+.blog .entry .title a{margin-bottom:5px; display:block}
+
+#header .search{margin-top:6px}
+
+
+
+/* Search form */
+input.bg1 
+{
+  background: #ffffff !important;
+}
+
+input.bg2 
+{
+  background:  #ffffff !important;
+}
+
+#gsc-i-id1{
+	border-radius: 20px !important;
+    font-size: 0.9em !important;
+    height: 34px !important;
+    margin: 0 !important;
+    padding: 6px 12px !important;
+    width: 170px !important;
+	display: table-cell !important;
+	float: right !important;
+    border: 1px solid #ccc !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset !important;
+    color: #555 !important;
+    font-size: 14px !important;
+    height: 34px !important;
+    line-height: 1.42857 !important;
+    padding: 6px 12px !important;
+	transition: all 0.2s ease-in 0.2s !important;
+	text-indent:0 !important;
+    /*transition: all 0.2s ease-in 0.2s;*/
+}
+#gsc-i-id1:focus{width:230px !important; transition: all 0.2s ease-in 0.2s !important; background: none repeat scroll 10px 0% rgb(255, 255, 255) !important; box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset !important;}
+
+.gsc-input-box, #gstl_50, .gsc-input-box:hover, .gsc-input-box:focus 
+	{padding-top:0 !important; 
+	border:0 !important; 
+	background:none !important;
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset !important;
+}
+
+.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+    border: 0 none !important;
+    color: #ccc !important;
+    position: absolute !important;
+    right:12px !important;
+    top: 10px !important;
+	min-width: 20px !important;
+    z-index: 51000 !important;
+	text-indent:-5000px !important;
+	overflow:hidden;
+	background:url(../images/search.png) no-repeat center center !important;
+	border:0 !important;
+	display:block !important;
+	height:18px !important; width:18px !important;
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset !important;
+}
+
+.gsc-clear-button,
+.gcsc-branding{display:none !important;}
+
+.gs-image {width:42px; padding:3px; margin-top:20px !important} 
+.gsc-orderby {display:none !important}
+
+td.gsib_b {display:none !important;}
+
+.gsc-control-cse .gsc-table-result {font-family: "Open Sans",Arial,sans-serif  !important;}
+.cse .gsc-control-cse, .gsc-control-cse {
+    background: none !important;
+}
+td.gsc-thumbnail{display:none !important}
+.gs-title, .gs-fileFormat{text-align:left !important;}
+.gs-fileFormat{padding-left:10px !important}
+.gsc-control-cse .gsc-table-result a,
+.gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl{color:#2c318d !important}
+.gs-bidi-start-align{text-align:center; margin-top:10px !important}
+.gsc-cursor{border:1px solid #ccc; padding:10px 0; border-radius: 4px; overflow:hidden; margin-top:10px !important}
+div.gsc-cursor-page{
+    border-right: 1px solid #ddd !important;
+	display:inline-block;
+    line-height: 1.42857;
+    margin-left: 0px;
+    padding: 9px 12px;
+    position: relative;
+	color:#2c318d !important;
+	text-decoration:none !important;
+	margin-right:0 !important;
+}
+div.gsc-cursor-current-page,
+.cse .gsc-results .gsc-cursor-page.gsc-cursor-current-page, .gsc-results .gsc-cursor-page.gsc-cursor-current-page{
+    border-right: 1px solid #ddd !important;
+	display:inline-block;
+    line-height: 1.42857;
+    margin-left: 0px !important;
+    padding: 9px 12px !important;
+    position: relative;
+	color:#2c318d !important;
+	text-decoration:none !important;
+	margin-right:0 !important;
+}
+div.gsc-cursor-page:first-child{border-left:1px solid #ddd !important;}
+div.gsc-cursor-page:last-child{border-right: 0 !important;}
+
+.gsc-webResult.gsc-result, .gsc-results .gsc-imageResult,
+.cse .gsc-control-cse, .gsc-control-cse{background:none !important;}
+
+.cse .gsc-cursor-box, .gsc-cursor-box {
+    border-top: none !important;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+    background-color: #f9f9f9 !important;
+    border-color: #ddd;
+    color: #950000;
+}
+.gs-image-box img{width:200px !important; height:200px !important;}
+
+
+
+.gs-bidi-start-align{padding-left:8px !important}
+.gs-visibleUrl{padding-left:0px !important}
+
+
+/*------investor relation------*/
+
+.accordionimagenone .active a {
+    color: #fff;
+    text-decoration: none;
+}
+.bdrNone .hidediv{border:none; padding:6px 5px}
+.accordionimagenone .toggle label a{text-decoration:none}
+
+.reportparent .hidediv a{color:#2c318d; display:block; margin-bottom:6px;}
+.reportparent .hidediv a:hover{text-decoration:underline}
+
+.pdftable tr.headtitle th{border-right:1px solid #ccc}
+
+span.thumbnail{margin-bottom:0}
+
+
+/*------------------------*/
+
+#homlayout section.highlight.footer{margin:0 0 -20px; border-color: #000 !important}
+.rightmargin{margin-right:20px}
+.pull-right {margin: 0px 0 5px 20px;}
+.sidebar .highslide-gallery img{max-width:100%;}
+#featuredcontent{
+	padding:15px 4% 50px;
+	position:relative;
+	min-height:200px;
+}
+.caroufredsel_wrapper{height:400px !important}
+#featuredcontent p{font-size:13px; width:100%; line-height:20px;}
+#featuredcontent p a{font-weight:normal}
+#featuredcontent p strong{display:block}
+.newsSlide{padding:0 !important; z-index:5; position:relative}
+#bgimage{opacity:0.3; position:absolute; left:20px; bottom:-50px}
+h5.cardfeetitle{text-transform:capitalize; font-family: 'open_sanslight'; font-weight:normal; }
+#header nav ul.nav-main .dropdown-submenu > .dropdown-menu{left:100.6%}
+.radiousslide{
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+.portfolio-title .icon{font-size:1em; color:#2c318d}
+
+#footer .phone{font-size:24px; line-height:24px}
+
+/*-------Mobile banking------*/
+.mobilebanking #header{padding-top:4px}
+/*.mobilebanking #header.single-menu nav ul.nav-main li.active > a{background:#2c318d !important; color:#fff}*/
+.mobilebanking .popup-inline-content{max-width:500px}
+h1.custom{margin-bottom:0}
+.servicess .col-md-3{width:auto; margin:0 !important}
+.servicess .col-md-3 .box-content{padding-top:10px}
+.servicess .col-md-3 .box-content p{margin-bottom:10px}
+.customhistory .box-content h4{margin-bottom:0}
+.customhistory .box-content p{margin-left:0}
+section.mobileawardcontent{margin-bottom:0}
+.mobilebanking #header{
+	border-bottom: 1px solid #e9e9e9;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.innerwrapper{padding:30px 15px 20px}
+ul.paperadlist li span img{width:135px; height:100px}
+.featured-box .playerwrap{padding:10px 10px 20px}
+.mobilebankingmain{text-align:left}
+.toppadding{padding-top:10px;}
+.toppadding:last-child{border-bottom:0}
+.imagealign{margin:20px auto; display:block}
+/*.......video player......*/
+.playerbtnwrap{padding:10px 0 0; overflow:hidden; text-align:center}
+.playerbtnwrap button{
+	*display:inline; display:inline-block; 
+	background:#202020; color:#fff;
+	border:0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width:68px; text-align:center;
+}
+.playerbtnwrap button:hover{background:#2c318d}
+
+.centeralign{width:50%; margin:0 auto; padding:20px 0}
+.gatewayimage{margin:0 auto; display:block}
+.newsicomnwrap{
+	background: url(../images/newsicon.png) no-repeat left top; padding-left:48px
+    height: 140px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-left: 48px;
+}
+div.author{font-size:11px; color:#000}
+
+b, strong, .newsSlide p a, h4.panel-title {
+    font-weight: 400;
+	font-family: 'open_sanssemibold';
+}
+.lead{font-family: 'open_sanslight';}
+
+.featurednews h4.panel-title {font-weight:400; font-family: "Open Sans",Arial,sans-serif  !important; height:auto}
+
+.word-rotator-title strong{font-family: 'open_sansbold';}
+
+
+/*--------cardLinkwrap--------*/
+.cardLinkwrap{position:relative}
+
+.portfolio-nav-all{position: absolute; left:0; top:-13px; width:auto; float:left; z-index:500}
+.cardLinkwrap .col-md-10{width:100%}
+
+.wrapcredit{left:135px}
+.cardLinkwrap .portfolio-nav-all .icon{font-size:16px}
+.cardLinkwrap a:hover{text-decoration:none}
+
+
+
+/*---------Complain cell--------*/
+
+span#close-bar{
+	-ms-transform:rotate(90deg); /* IE 9 */
+  	-moz-transform:rotate(90deg); /* Firefox */
+  	-webkit-transform:rotate(90deg); /* Safari and Chrome */
+  	-o-transform:rotate(90deg); /* Opera */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+	float:left;
+	font-size:17px;
+	color:#fff;
+	letter-spacing:2px;
+	top:44px;
+	left:-86px;
+	width:130px;
+	position:absolute;
+	margin:0;
+	cursor:pointer;
+	padding:10px 17px 10px 13px;
+	-webkit-border-radius: 0px 0px 6px 6px;
+	-moz-border-radius: 0px 0px 6px 6px;
+	border-radius: 0px 0px 6px 6px;
+	background-color:grey;
+	font-family: 'open_sanssemibold';
+}
+span#close-bar:hover,
+#hiddenPanel:hover span#close-bar{color:#0f0f0f;}
+.complanBlock{
+	width:100%; float:left;
+	height:110px;
+	border:1px solid #2c318d;
+	margin:10px 0 0;
+	background:#fff;
+}
+
+.complanBlock h4{
+	line-height:24px;
+	font-size:14px;
+	padding:10px 0 2px 45px;
+	margin-bottom:0;
+	color:#000;
+	background:url(../img/help.jpg) no-repeat 10px 13px;
+	height:auto;
+}
+.complanBlock h4.sendemail{background:url(../img/emailsend.jpg) no-repeat 10px 24px;}
+
+.complanBlock a{color:#2c318d; font-family: 'open_sanssemibold';}
+.complanBlock a:hover{color:#000;}
+
+.complanBlock a:hover{text-decoration:none; color:#1958b7}
+
+#hiddenPanel{
+	height:130px;
+	margin:0;
+	position:fixed;
+	right:0;
+	top:10%;
+	z-index:5000000;
+	right:-280px; width:280px;
+	background-color:grey;
+}
+
+strong.numbercell{font-family: 'open_sansbold'; font-size:15px}
+.mailid{color:#2c318d}
+h3.lodgetitle{padding-top:12px}
+
+
+/*-----Credit Card Button-----*/
+.wrapercreditcardBtn{text-align:center}
+.cardetailsupdate{text-align:left}
+.cardetailsupdate .btn-lg{margin:0px 0 10px; font-size:14px}
+.wrapercreditcardBtn .btn-lg{
+	background-color: #2C318D;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2C318D), to(#2F2727));
+	
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #2C318D, #1a82f7);
+	
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #2C318D, #1a82f7);
+	
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #2C318D, #1a82f7);
+	
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #2C318D, #1a82f7);
+}
+
+.wrapercreditcardBtn .btn-lg:hover{
+	background-color: #2F2727;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2F2727), to(#1a82f7));
+	
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #2F2727, #1a82f7);
+	
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #2F2727, #1a82f7);
+	
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #2F2727, #1a82f7);
+	
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #2F2727, #1a82f7);
+}
+
+.cardbenefitwrap p strong,
+.internetbankingftrs p strong{display:block; padding-bottom:5px; color:#2C318D}
+
+table.valuePlustable{margin:30px auto 20px; padding:10px 0; width:100%}
+.valuePlustable td{background:#F5F5F5}
+.valuePlustable tr td,
+.valuePlustable tr td:first-child{vertical-align:top; width:33%; padding:5px}
+.valuePlustable tr td.valuecolunm2{padding:0}
+.valuePlustable tr td.valuecolunm2 td{padding:5px 5px; border-bottom:1px solid #ddd}
+.valuePlustable tr td.valuecolunm2 td.bdrNone{border-bottom:none}
+
+
+.mobilebnfitWrap .thumb-info{font-weight:bold; font-size:14px; padding-bottom:10px}
+.mobilebnfitWrap .col-md-3in{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+    transform: translate3d(0px, 0px, 0px);
+	margin-bottom:15px;
+	width:95%;
+	padding-top:10px;
+	margin-left:15px;
+}
+
+/*-----------Responsive----------*/
+
+@media (max-width:1199px){
+	.navbar-collapse{margin-top:35px}
+	#header nav.mega-menu ul.nav-main li.mega-menu-item ul.sub-menu a{font-size:0.7em}
+}
+
+
+
+
+@media (max-width: 991px)
+{.sidefleft{width:100%}
+.footer-copyright{position:relative;top:auto}
+.col-md-offset-1{position:relative; z-index:0}
+
+span.thumbnail{border: 1px solid #ddd;}
+#featuredcontent{height:auto !important}
+.navbar-collapse{margin-top:0px}
+.mega-menu-content .col-md-3 hr{display:none}
+.cardLinkwrap .portfolio-nav-all{display:block}
+.cardLinkwrap .portfolio-nav-all{top:-35px;}
+.footer-copyright .col-md-11{margin-top:-53px; position:relative; padding-left:95px}
+#header nav.mega-menu ul.nav-main li.mega-menu-item ul.sub-menu a{font-size:0.9em}
+
+}
+
+@media (max-width: 768px){
+	.awardparent{max-width:100%}
+	.line_hor img, .futureline .block img{width:100%}
+	.gatewayimage{width:100%}
+	#hiddenPanel{top:36%;}	
+}
+
+@media (max-width: 670px){
+	.wrapercreditcardBtn .btn-lg{margin-bottom:15px; font-size:16px}
+}
+
+@media (max-width: 600px){
+	.btn-responsive-nav {top: 24px;}
+	#header > .container {height:50px;}
+	#header .logo {padding: 0px 0 0;}
+	.imagealign{width:100%}
+}
+
+@media (max-width: 480px){
+	.awardtbl tr td{font-size:10px !important}
+	img.reatailimage{height:auto}
+	.complaintable{width:100%; overflow:hidden}
+	.complaintable tr td{font-size:8px}
+	
+}
+
+@media (max-width: 320px){
+	.portfolio-nav-all{left:30px;}
+	.wrapcredit{left:150px}
+}
+

@@ -1,0 +1,14 @@
+/* 
+    Created on : 19-dic-2013, 14.17.54
+    Author     : Stefano Gargiulo
+*/
+.readmorejs-block{
+
+}
+.readmore-js-toggle, .readmore-js-section {
+  display: block;
+  width: 100%;
+}
+.readmore-js-section {
+  overflow: hidden;
+}

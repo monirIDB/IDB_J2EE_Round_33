@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		id:<input type="text" id="d1"  name="n1"/>
+		<input type="submit" value="click" onclick="main()"/>
+		<script>
+		function main(){
+			var b=document.getElementById("d1").value;
+			var h=m1(b);
+			if(h==true){
+				window.alert("Input sucssecs full");
+			}else{	
+				window.alert("Your Input is Incorrect");
+			}
+		}
+			function m1(c){
+				var a=/^[0-9]+$/;
+				if(c.match(a)){
+					return true;
+					
+				}else{
+					return false;
+					
+				}
+			}
+			
+		</script>
+	</body>
+</html>

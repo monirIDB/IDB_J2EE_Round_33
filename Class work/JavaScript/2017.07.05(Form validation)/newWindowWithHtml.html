@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<input type="submit" onclick="m1()" value="open"/>
+		<input type="submit" onclick="m2()" value="close"/>
+		<script language="javascript">
+			
+			var w="";
+			function m1(){
+				 w=window.open("","WindowName","width=300 height=300");
+				 w.document.write("<html><body><h1>Hellow to You</h1><input type='text'/><br/><input type='submit' value='submit'/><br/><textarea cols='40' rows='4'></textarea></body></html>");
+				 w.document.close();
+			}
+			function m2(){
+			 w.close();
+			}
+		</script>
+
+		
+	</body>
+</html>

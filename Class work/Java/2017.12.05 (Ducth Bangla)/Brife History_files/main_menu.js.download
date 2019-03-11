@@ -1,0 +1,400 @@
+/*----------Main menu-----------*/
+
+
+document.write("<ul id=\"mainMenu\" class=\"nav nav-pills nav-main\">");
+	document.write("<li id=\"homesclt\"><a href=\"http://www.dutchbanglabank.com\">Home </a></li>");
+	
+	document.write("<li class=\"dropdown\">");
+    	document.write("<a class=\"dropdown-toggle\">About Us <i class=\"icon icon-angle-down\"></i></a>");
+			document.write("<ul class=\"dropdown-menu\">");
+				document.write("<li><a href=\"/about-us/brief-history.html\">Brief History</a></li>");
+				document.write("<li><a href=\"/about-us/board.html\">Board Of Directors</a></li>");
+				document.write("<li><a href=\"http://app.dutchbanglabank.com/DBBLWeb/DbblManagement\" >Management</a></li>");
+			document.write("</ul>");		
+  	document.write("</li>");
+		
+	document.write("<li class=\"dropdown customdropdown\">");
+    	document.write("<a class=\"dropdown-toggle\">Electronic Banking <i class=\"icon icon-angle-down\"></i></a>");		
+		document.write("<ul class=\"dropdown-menu\">");			
+			document.write("<li><a href=\"/electronic-banking/core-banking.html\">core banking</a></li>");
+			
+			document.write("<li class=\"dropdown-submenu\">");
+				document.write("<a \"\">Internet Banking</a>");
+				document.write("<ul class=\"dropdown-menu\">");
+					document.write("<li>");
+						document.write("<a target=\"_blank\" href=\"https://ibfcat1.dutchbanglabank.com/B001/ENULogin.jsp\">Internet Banking Login</a>");
+						/*document.write("<a target=\"_blank\" href=\"../internet-banking/twofa-ib.html\">Internet Banking Login</a>");*/
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a href=\"/electronic-banking/internet-banking.html\">Internet Banking Features</a>");
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a target=\"_blank\" href=\"https://ecom.dutchbanglabank.com/2FAregistration\">2FA for Internet Banking</a>");
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a target=\"_blank\" href=\"../internet-banking/ib-guidelines.html\">Internet Banking Guidelines</a>");
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a target=\"_blank\" href=\"../internet-banking/2fa-guidelines.html\">2FA Guidelines</a>");
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a target=\"_blank\" href=\"https://ecom.dutchbanglabank.com/rsanew_pin\">2FA Pin Set</a>");
+					document.write("</li>");
+					
+				document.write("</ul>");				
+				
+			document.write("</li>");
+			
+			
+			document.write("<li class=\"dropdown-submenu\">");
+				document.write("<a \"\">Alternative delivery channel</a>");
+				document.write("<ul class=\"dropdown-menu\">");
+					document.write("<li>");
+						document.write("<a href=\"/electronic-banking/switching-software.html\">switching software</a>");
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a href=\"/electronic-banking/atm.html\">ATM</a>");
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a href=\"http://app.dutchbanglabank.com/DBBLWeb/ATMLocation\">ATM location</a>");
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a href=\"/electronic-banking/fast-track.html\">Fast track</a>");
+					document.write("</li>");
+					document.write("<li>");
+						document.write("<a href=\"http://app.dutchbanglabank.com/DBBLWeb/FastTrack\">Fast track location</a>");
+					document.write("</li>");					
+					
+					document.write("<li>");
+						document.write("<a href=\"/electronic-banking/pos.html\">POS</a>");
+					document.write("</li>");
+					document.write("<li>");
+						document.write("<a href=\"http://app.dutchbanglabank.com/DBBLWeb/pos-locations.jsp\">POS Location</a>");
+					document.write("</li>");
+				document.write("</ul>");				
+				
+			document.write("</li>");
+					
+			
+			document.write("<li class=\"dropdown-submenu\">");
+				document.write("<a \"\">Debit Card</a>");
+				document.write("<ul class=\"dropdown-menu\">");
+					document.write("<li>");
+						document.write("<a href=\"/electronic-banking/debit-cards.html\">Debit Cards</a>");
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a href=\"/electronic-banking/od-cards.html\">OD Cards</a>");
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a href=\"/electronic-banking/emv.html\">EMV Cards</a>");
+					document.write("</li>");
+					
+				document.write("</ul>");
+				
+			document.write("</li>");
+						
+			
+			document.write("<li class=\"dropdown-submenu\">");
+				document.write("<a href=\"#\">Credit Card System </a>");
+				document.write("<ul class=\"dropdown-menu\">");
+					document.write("<li>");
+						document.write("<a href=\"/electronic-banking/credit-card-software.html\">software</a>");
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a href=\"/electronic-banking/credit-cards.html\">Credit cards</a>");
+					document.write("</li>");
+					
+				document.write("</ul>");
+			document.write("</li>");
+			
+			/*document.write("<li><a href=\"/electronic-banking/internet-banking.html\">Internet banking</a></li>");*/
+			
+			
+			document.write("<li class=\"dropdown-submenu\">");
+				document.write("<a \"\">Internet payment gateway</a>");
+				document.write("<ul class=\"dropdown-menu\">");
+				
+					document.write("<li>");
+						document.write("<a href=\"/electronic-banking/internet-payment-gateway.html\">Internet payment gateway</a>");
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a href=\"/electronic-banking/ipg-software.html\">IPG Software</a>");
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a href=\"/electronic-banking/ipg-sevices.html\">IPG Services</a>");
+					document.write("</li>");
+					
+					document.write("<li>");
+						document.write("<a href=\"http://app.dutchbanglabank.com/DBBLWeb/Merchant\">e-Marchant Location</a>");
+					document.write("</li>");
+					
+				document.write("</ul>");
+				
+			document.write("</li>");
+			
+			document.write("<li><a href=\"/electronic-banking/rocket.html\">Rocket</a></li>");
+			document.write("<li><a href=\"/electronic-banking/agent-banking.html\">Agent banking</a></li>");
+			
+			document.write("<li><a href=\"/electronic-banking/sms-alert.html\">Sms alert banking</a></li>");
+			document.write("<li><a href=\"/electronic-banking/call-center.html\">Call center</a></li>");
+			document.write("<li><a href=\"/electronic-banking/data-center.html\">data center</a></li>");
+											
+		document.write("</ul>");		
+  	document.write("</li>");
+	
+	document.write("<li>");
+    	document.write("<a target=\"_blank\" href=\"/rocket/rocket.html\">Rocket</a>");
+  	document.write("</li>");
+	
+	document.write("<li>");
+    	document.write("<a target=\"_blank\" href =\"/agent-banking/agentbanking.html\">Agent Banking</a></li>");
+  	document.write("</li>");
+        
+	
+	document.write("<li>");
+    	document.write("<a href=\"/social/social-cause.html\">Social cause</a>");	
+  	document.write("</li>");
+	
+	document.write("<li class=\"dropdown mega-menu-item mega-menu-fullwidth\">");
+    	document.write("<a class=\"dropdown-toggle\">Other services <i class=\"icon icon-angle-down\"></i></a>");
+		document.write("<ul class=\"dropdown-menu\">");
+			document.write("<li>");
+				document.write("<div class=\"mega-menu-content\">");
+					document.write("<div class=\"row\">");
+					
+						document.write("<div class=\"col-md-3\">");
+							document.write("<ul class=\"sub-menu\">");
+								document.write("<li>");
+									document.write("<span class=\"mega-menu-sub-title\">Personal Banking</span>");
+									document.write("<ul class=\"sub-menu\">");
+										document.write("<li>");
+											document.write("<a href=\"/electronic-banking/introduction.html\">Electronic Banking</a>");
+											document.write("<a href=\"/personal-banking/life-line.html\">Dutch-Bangla Bank Life Line</a>");
+											document.write("<a href=\"/personal-banking/future-line.html\">Dutch-Bangla Bank Future Line</a>");
+										document.write("</li>");
+									document.write("</ul>");
+								document.write("</li>");
+							document.write("</ul>");
+							document.write("<hr class=\"tall\">");
+						document.write("</div>");
+						
+						
+						document.write("<div class=\"col-md-3\">");
+							document.write("<ul class=\"sub-menu\">");
+								document.write("<li>");
+									document.write("<span class=\"mega-menu-sub-title\">Corporate Banking</span>");
+									document.write("<ul class=\"sub-menu\">");
+										document.write("<li>");
+											document.write("<a href=\"/corporate-banking/corpbanking.html\">Corporate Banking services overview</a>");
+											document.write("<a href=\"/corporate-banking/ebankingforcorp.html\">Electronic Banking for your business</a>");
+											document.write("<a href=\"/corporate-banking/lc-trade.html\">LC Trade</a>");
+										document.write("</li>");
+									document.write("</ul>");
+								document.write("</li>");
+							document.write("</ul>");
+							
+							document.write("<hr class=\"tall\">");
+						document.write("</div>");
+											
+						
+						document.write("<div class=\"col-md-3\">");
+							document.write("<ul class=\"sub-menu\">");
+								document.write("<li>");
+									document.write("<span class=\"mega-menu-sub-title\">Deposits and Advances</span>");
+									document.write("<ul class=\"sub-menu\">");
+										document.write("<li>");
+											document.write("<a href=\"/depositsadv/deposits.html\">Deposits</a>");
+											document.write("<a href=\"/depositsadv/term-deposit.html\">Term Deposits</a>");
+											document.write("<a href=\"/depositsadv/loansadv.html\">Loans and Advances</a>");
+										document.write("</li>");
+									document.write("</ul>");
+								document.write("</li>");
+							document.write("</ul>");
+							
+							document.write("<hr class=\"tall\">");
+						document.write("</div>");	
+						
+						document.write("<div class=\"col-md-3\">");
+							document.write("<ul class=\"sub-menu\">");
+								document.write("<li>");
+									document.write("<span class=\"mega-menu-sub-title\">Delivery Channel</span>");
+									document.write("<ul class=\"sub-menu\">");
+										document.write("<li>");
+											document.write("<a href=\"http://app.dutchbanglabank.com/DBBLWeb/ATMLocation\">ATM Locations</a>");
+											document.write("<a href=\"http://app.dutchbanglabank.com/DBBLWeb/BranchLocation\">Branch Locations</a>");
+											document.write("<a href=\"http://app.dutchbanglabank.com/DBBLWeb/MerchantLocation\">Merchant Locations</a>");				
+										document.write("</li>");
+									document.write("</ul>");
+								document.write("</li>");
+							document.write("</ul>");
+							
+							document.write("<hr class=\"tall\">");
+						document.write("</div>");	
+						
+						
+						document.write("<div class=\"col-md-3\">");
+							document.write("<ul class=\"sub-menu\">");
+								document.write("<li>");
+									document.write("<span class=\"mega-menu-sub-title\">SME Banking</span>");
+									document.write("<ul class=\"sub-menu sub-menu-itemmore\">");
+										document.write("<li>");
+											document.write("<a href=\"/sme-banking/cash-credit.html\">Dutch-Bangla Bank Smart Cash Credit</a>");
+											document.write("<a href=\"/sme-banking/term-loan.html\">Dutch-Bangla Bank Smart Term Loan</a>");
+											document.write("<a href=\"/sme-banking/festival-loan.html\">Dutch-Bangla Bank Smart Festival Loan</a>");
+											document.write("<a href=\"/sme-banking/women-enter-loan.html\">Dutch-Bangla Bank Smart Women Entrepreneurs Financing</a>");
+											document.write("<a href=\"/sme-banking/distributor-financing.html\">Dutch-Bangla Bank Smart Distributor Financing</a>");
+											document.write("<a href=\"/sme-banking/shop-financing.html\">Cash Credit (Hypo) under Small Shop Financing Scheme</a>");
+										document.write("</li>");
+									document.write("</ul>");
+								document.write("</li>");
+							document.write("</ul>");
+							
+							document.write("<br/><br/> <hr class=\"tall\">");
+						document.write("</div>");				
+									
+						
+						
+						document.write("<div class=\"col-md-3\">");
+							document.write("<ul class=\"sub-menu\">");
+								document.write("<li>");
+									document.write("<span class=\"mega-menu-sub-title\">Miscellaneous</span>");
+									document.write("<ul class=\"sub-menu sub-menu-itemmore\">");
+										document.write("<li>");
+											/*Changed by Narayon on 24-01-2017* New Menu Item added*/
+											document.write("<a target=\"_blank\"  href=\"http://pop3.dutchbanglabank.com/webmail/\">Dutch-Bangla Bank Web Mail</a>");
+											/*document.write("<a target=\"_blank\"  href=\"http://webmail.dbbl.com.bd/webmail/src/login.php\">dbbl.com.bd Web Mail</a>");*/
+											
+											document.write("<a target=\"_blank\"  href=\"/schedule_charge/schedule-of-charges.pdf\">Charges and Fees</a>");
+											
+											document.write("<a target=\"_blank\" href=\"http://app.dutchbanglabank.com/Online_Job/\">Career Opportunity (Apply Online)</a>");
+											document.write("<a target=\"_blank\" href=\"http://app.dutchbanglabank.com/DBBLScholarship\">Dutch-Bangla Bank Scholarship</a>");
+											document.write("<a href=\"/tender/tender.html\">Dutch-Bangla Bank Tender Notice</a>");
+											document.write("<a target=\"_blank\" href=\"http://newsroom.dutchbanglabank.com/newsroom\">News Room</a>");
+											document.write("<a href=\"/services_company/remittance-exchange.html\">Remittance services for Exchange Houses</a>");
+											document.write("<a target=\"_blank\" href=\"http://app.dutchbanglabank.com/remittance_online\">Online Remittance Status</a>");
+											document.write("<a target=\"_blank\"  href=\"/wu/terms-and-Conditions.pdf\">Western Union Terms &amp; Conditions</a>");
+											document.write("<a target=\"_blank\"  href=\"/customer-awareness/aml-poster.pdf\">Customer Awareness</a>");
+											document.write("<a target=\"_blank\"  href=\"/customer-awareness/CUSTOMER-CHARTER.pdf\">Customer Charter</a>");
+										document.write("</li>");
+									document.write("</ul>");
+								document.write("</li>");
+							document.write("</ul>");
+							
+							document.write("<hr class=\"tall\">");
+						document.write("</div>");
+						
+						
+						document.write("<div class=\"col-md-3\">");
+							document.write("<ul class=\"sub-menu\">");
+								document.write("<li>");
+									document.write("<span class=\"mega-menu-sub-title\">Investor Relations</span>");
+									document.write("<ul class=\"sub-menu sub-menu-itemmore\">");
+										document.write("<li>");
+											document.write("<a href=\"/investor-relations/financial-statements.html\">Financial Statements</a>");
+											document.write("<a href=\"/investor-relations/interim-report.html\">Interim Report</a>");
+											document.write("<a href=\"/investor-relations/price-sensitive-information.html\">Price Sensitive Information</a>");
+											document.write("<a href=\"/investor-relations/risk-based-capital.html\">Risk Based Capital</a>");
+											document.write("<a href=\"/investor-relations/financial-inclusion-and-literacy.html\">Financial Inclusion and Literacy</a>");
+											document.write("<a href=\"/investor-relations/contact-person.html\">Contact Person</a>");
+											
+										document.write("</li>");
+									document.write("</ul>");
+								document.write("</li>");
+							document.write("</ul>");
+							
+							document.write("<br/><br/> <hr class=\"tall\">");
+						document.write("</div>");
+						
+						document.write("<div class=\"col-md-3\">");
+							document.write("<ul class=\"sub-menu\">");
+								document.write("<li>");
+									document.write("<span class=\"mega-menu-sub-title\">Help Desk </span>");
+									document.write("<ul class=\"sub-menu sub-menu-itemmore\">");
+										document.write("<li>");
+											
+											document.write("<a href=\"/help-desk/lost-stolen.html\">Help Line</a>");
+											document.write("<a href=\"/help-desk/customer-serveice.html\">Customer Service</a>");
+											document.write("<a href=\"/help-desk/faq.html\">Faq</a>");
+															
+										document.write("</li>");
+									document.write("</ul>");
+								document.write("</li>");
+							document.write("</ul>");
+							
+							document.write("<br/><br/> <hr class=\"tall\">");
+						document.write("</div>");	
+						
+						
+					document.write("</div>");
+				document.write("</div>");
+			document.write("</li>");
+		document.write("</ul>");
+				
+  	document.write("</li>");
+
+document.write("</ul>");
+
+
+$( document ).ready(function() {
+	
+	var url = window.location.pathname,
+		 urlRegExp = new RegExp(url.trim().replace(/\/$/,'') + "$"); 
+		 
+		if(url == "/"){
+			
+				$('#homesclt').addClass('active');
+			}else{
+		
+	$(".nav-main ul li a").each(function(){
+		
+
+			
+		if(urlRegExp.test(this.href.replace(/\/$../,''))){			
+			$(this).parent().addClass('active');
+			
+			
+        }
+		
+		
+	});
+	
+	$(".nav-main ul li li a").each(function(){
+		if(urlRegExp.test(this.href.replace(/\/$/,''))){			
+			$(this).parent().parent().parent().addClass('active');
+        }
+	});
+	
+	$(".nav-main ul li li li a").each(function(){
+		if(urlRegExp.test(this.href.replace(/\/$/,''))){			
+			$(this).parent().parent().parent().parent().parent().addClass('active');
+        }
+	});
+
+	
+	
+	
+	
+	
+		$(".nav-main ul li li li li a").each(function(){
+		if(urlRegExp.test(this.href.replace(/\/$/,''))){			
+			$(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().addClass('active');
+        }
+	});
+			}
+	 
+});
+
+

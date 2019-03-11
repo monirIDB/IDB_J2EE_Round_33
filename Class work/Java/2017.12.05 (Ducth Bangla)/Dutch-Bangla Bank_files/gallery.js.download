@@ -1,0 +1,172 @@
+	// Load billboards Ads
+
+	function changeBill(imgNum)
+		{
+			var numImg, pImg, nImg;
+			numImg = 7;
+			if (imgNum == 1)
+				pImg = numImg;
+			else
+				pImg = parseInt(imgNum) - 1;
+
+			if (imgNum == numImg)
+				nImg = 1;
+			else
+				nImg = parseInt(imgNum) + 1;
+
+			var strAds = '<div class="highslide-gallery">'
+					+ '<a class="highslide" id="gallery-opener1" href="javascript:;" onclick="document.getElementById(\'thumb1\').onclick()">'
+					+ '<img src="images/billBoards/thumbs/t' + imgNum + '.jpg" alt="Revolutionary Adds" title="Click to enlarge" /></a></div>'
+					+ '<p style="margin-top:10px;"><a href="javascript:changeBill(' + pImg + ');">Previous</a>'
+					+ '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+					+ '<a href="javascript:changeBill(' + nImg + ');">Next</a></p>';
+			strAds += '</div>';
+			var changeHidden = "";
+			for (var i = imgNum; i <= numImg; i++) {
+				if (i == imgNum) {
+					changeHidden += '<a id="thumb1" href="images/billBoards/o' + i + '.jpg" class="highslide " title="" onclick="return hs.expand(this, config1 )">'
+							+ '<img src="images/billBoards/thumbs/t' + i + '.jpg" alt=""/></a>';
+				}
+				else {
+					changeHidden += '<a href="images/billBoards/o' + i + '.jpg" class="highslide " title="" onclick="return hs.expand(this, config1 )">'
+							+ '<img src="images/billBoards/thumbs/t' + i + '.jpg" alt=""/></a>';
+				}
+			}
+			for (var i = 1; i < imgNum; i++) {
+				changeHidden += '<a href="images/billBoards/o' + i + '.jpg" class="highslide " title="" onclick="return hs.expand(this, config1 )">'
+						+ '<img src="images/billBoards/thumbs/t' + i + '.jpg" alt=""/></a>';
+
+			}
+			//strAds+='</div>';
+			document.getElementById("billBoards").innerHTML = strAds;
+			document.getElementById("billGallery").innerHTML = changeHidden;
+		}
+		
+		
+	// Load Print Ads
+	 function changeThumb(imgNum)
+		{
+			//alert("Modon");
+			var numImg, pImg, nImg;
+			numImg = 40;
+			if (imgNum == 1)
+				pImg = numImg;
+			else
+				pImg = parseInt(imgNum) - 1;
+
+			if (imgNum == numImg)
+				nImg = 1;
+			else
+				nImg = parseInt(imgNum) + 1;
+
+			var strAds = '<div id="addGalary" class="highslide-gallery">'
+					+ '<a class="highslide" id="gallery-opener2" href="javascript:;" onclick="document.getElementById(\'thumb2\').onclick()">'
+					+ '<img src="images/Adds/thumbs/t' + imgNum + '.jpg" alt="Revolutionary Adds" title="Click to enlarge" /></a></div>'
+					/*+ '<p style="margin-top:10px;"><a href="javascript:changeThumb(' + pImg + ');">Previous</a>'
+					+ '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'
+					+ '<a href="javascript:changeThumb(' + nImg + ');">Next</a></p>';*/
+			var changeHidden = "";
+			for (var i = imgNum; i <= numImg; i++) {
+				if (i == imgNum) {
+					changeHidden += '<a id="thumb2" href="images/Adds/o' + i + '.jpg" class="highslide" title="" onclick="return hs.expand(this, config2 )">'
+							+ '<img src="images/Adds/thumbs/t' + i + '.jpg" alt=""/></a>';
+				}
+				else {
+					changeHidden += '<a href="images/Adds/o' + i + '.jpg" class="highslide" title="" onclick="return hs.expand(this, config2 )">'
+							+ '<img src="images/Adds/thumbs/t' + i + '.jpg" alt=""/></a>';
+				}
+			}
+			for (var i = 1; i < imgNum; i++) {
+				changeHidden += '<a href="images/Adds/o' + i + '.jpg" class="highslide" title="" onclick="return hs.expand(this, config2 )">'
+						+ '<img src="images/Adds/thumbs/t' + i + '.jpg" alt=""/></a>';
+
+			}
+			//strAds+='</div>';
+			document.getElementById("printAdds").innerHTML = strAds;
+			document.getElementById("addGallery").innerHTML = changeHidden;
+		}
+		
+	
+	// Add the slideshow controller	
+	
+	hs.graphicsDir = 'css/graphics/';
+	hs.outlineType = 'rounded-white';
+	hs.dimmingOpacity = 0.65;
+	hs.fadeInOut = true;
+	//hs.marginLeft = 130;
+	//hs.marginTop = 50;
+	hs.align = 'center';
+	hs.captionEval = 'this.a.title';
+
+
+	// Add the slideshow controller
+	
+	hs.addSlideshow({
+		//slideshowGroup: 'group1',
+		interval: 5000,
+		repeat: false,
+		useControls: true,
+		fixedControls: 'fit',
+		overlayOptions: {
+			opacity: '0.75',
+			position: 'top center',
+			offsetX: '0',
+			offsetY: '0',
+			hideOnMouseOut: true
+		}
+	});
+
+	// gallery config object
+	var config1 = {
+		slideshowGroup: 'group1',
+		thumbnailId: 'gallery-opener1',
+		numberPosition: 'caption',
+		transitions: ['expand', 'crossfade']
+	};
+
+	var config2 = {
+		slideshowGroup: 'group2',
+		thumbnailId: 'gallery-opener2',
+		numberPosition: 'caption',
+		transitions: ['expand', 'crossfade']
+	};
+	
+	
+	
+	// Tv Add Videp play
+	
+	 function changeVideo(videoNum)
+		{
+			var numvideo, pvideo, nvideo;
+			numvideo = 34;
+			if (videoNum == 1)
+				pvideo = numvideo;
+			else
+				pvideo = parseInt(videoNum) - 1;
+
+			if (videoNum == numvideo)
+				nvideo = 1;
+			else
+				nvideo = parseInt(videoNum) + 1;
+
+			var varVideo = "video/video" + videoNum;
+			var strAds = '<a  href="http://www.dutchbanglabank.com/' + varVideo + '.mp4"'
+			
+
+					+ 'style="display:block;width:100%;height:200px" id="player"></a> ';
+			document.getElementById("link_v").innerHTML = strAds;
+
+			var next_l = '<a href="javascript:changeVideo(' + pvideo + ');">Previous</a>'
+					+ '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'
+					+ '<a href="javascript:changeVideo(' + nvideo + ');">Next</a>';
+			document.getElementById("next_link_v").innerHTML = next_l;
+
+			//flowplayer("player", "video/player/flowplayer-3.2.7.swf");
+			
+			flowplayer("player", "video/player/flowplayer-3.2.7.swf", {
+				clip:  {
+					autoPlay: false
+				}
+			});
+		}
+

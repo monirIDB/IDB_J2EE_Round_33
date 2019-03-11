@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+		var n=window.prompt("Enter the value");
+		var a=new Array();
+		var i=0;
+		while((n!="x")&&(n!="X")&&(n!="exit")){
+			a[i]=n;
+			i=i+1;
+			var n=window.prompt("Enter the value");
+			}
+		for(i=0;i<a.length;i++){
+			document.write("Your input is:" +a[i]);
+			document.write("<br/>");
+			}
+		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+	
+		<script>
+		
+			var s1=parseInt(prompt("Number in Bangla"));
+			var s2=parseInt(prompt("Number in Bangla"));
+			var s3=parseInt(prompt("Number in Bangla"));
+			var s4=parseInt(prompt("Number in Bangla"));
+			var s5=parseInt(prompt("Number in Bangla"));
+			var s6=parseInt(prompt("Number in Bangla"));
+			var x=(s1+s2+s3+s4+s5+s6)/6;
+			document.write("averege:"+x+"<br/>");
+			switch(true){
+				case x<33: 
+					document.write("Your Gread is F<br/>"+"GPA is 0.00");
+					break;
+				case x<41: 
+					document.write("Your Gread is D <br/>"+"GPA is 2.00");
+					break;
+				case x<51: 
+					document.write("Your Gread is C <br/>"+"GPA is 2.50");
+					break;
+				case x<61: 
+					document.write("Your Gread is B <br/>"+"GPA is 3.00");
+					break;
+				case x<71: 
+					document.write("Your Gread is B+ <br/>"+"GPA is 3.50");
+					break;
+				case x<81: 
+					document.write("Your Gread is A- <br/>"+"GPA is 4.00");
+					break;
+				default:
+				 alert("Your Gread is A+  <br/>"+"GPA is 5.00");
+				 }
+		
+			
+		</script>
+	
+	</body>
+</html>

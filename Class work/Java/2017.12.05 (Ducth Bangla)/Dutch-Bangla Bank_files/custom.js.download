@@ -1,0 +1,224 @@
+/* Add here all your JS customizations */
+	$( document ).ready(function() {
+	
+	
+	if($('.list-unstyled li > a').text() == 'hrd_head@dbbl.com.bd'){
+		$('.list-unstyled li > a').text('hossain.mosharraf@dutchbanglabank.com');
+		$('.list-unstyled li > a').attr('href', 'mailto:hossain.mosharraf@dutchbanglabank.com');
+	}
+	
+	//Google search dynamic class added for customization
+		setInterval( function() 
+		{
+			$("#gsc-i-id1").addClass('bg1');
+	
+		},10/*Time*/);
+				
+		$( "body" ).click(function() {
+			
+			
+			if($('#gsc-i-id1').val() != '' ) {
+				setInterval( function() 
+				{
+					$("#gsc-i-id1").removeClass('bg1').addClass('bg2');
+	
+				},1/*Time*/);
+				
+			}
+			else {
+				setInterval( function() 
+				{
+					if($("#gsc-i-id1").hasClass( "bg2" )) {
+						//$("#gsc-i-id1").removeClass('bg2').addClass('bg1');
+					}
+				},1/*Time*/);
+			}
+			
+		});	
+	
+		
+		var speed = 300;
+        $('#close-bar').on('click', function(){
+
+            var $$ = $(this),
+                panelWidth = $('#hiddenPanel').outerWidth();
+
+            if( $$.is('.myButton') ){
+                $('#hiddenPanel').animate({right:0}, speed);
+                $$.removeClass('myButton')
+            } else {
+                $('#hiddenPanel').animate({right:-panelWidth}, speed);
+                $$.addClass('myButton')
+            }
+
+        });
+		
+
+		
+		
+				
+		
+		
+		//Latest news slide on sidebar
+		$( "#featuredcontent" ).load( "../latestnews.html", function() {
+			//alert( "Load was performed." );
+			$(".newsSlide").carouFredSel({
+				 direction: "up",
+				 height: "variable",
+				 cookie: false,
+				 auto: true
+				 //height: 1000,
+				 
+			});
+		});
+		
+		
+		// For left side news Slide
+		
+		<!--$('#featuredcontent').load('../latestnews.html',function(){-->
+			
+		<!--});-->
+	
+			
+		
+	//Html5 Video List	script
+	
+	
+	var el = document.getElementById("nextButton");
+	var tl = document.getElementById("prevButton");
+		if (el.addEventListener) {
+	  el.addEventListener("click", yourNextFunction, false);
+	} 
+	else {
+		el.attachEvent('onclick', yourNextFunction);
+	}  
+ 
+	if (tl.addEventListener) {
+		tl.addEventListener("click", yourPrevFunction, false);
+	} 
+	else {
+		tl.attachEvent('onclick', yourPrevFunction);
+	}  
+
+
+	var video_count =1,
+		videoPlayer = document.getElementById("homevideo");
+
+	function yourNextFunction (){
+		video_count++;
+		if (video_count == 47) video_count = 1;
+		var nextVideo = "video1/video"+video_count+".webm";
+		 videoPlayer.src = nextVideo;
+		videoPlayer.play();
+	}
+
+	function yourPrevFunction (){
+		  video_count--;
+		  if (video_count == 0) video_count = 46;
+		  var prevVideo = "video1/video"+video_count+".webm";
+		  videoPlayer.src = prevVideo;
+		  videoPlayer.play();
+	}
+	
+	//End Html5 Video List	
+	
+	
+	
+		
+
+		
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//image popup
+
+	$('.popup-gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+          }
+	});
+	
+	
+	
+	
+	//image
+	
+										
+function changeThumb(imgNum)
+{	
+	//alert("Modon");
+	var numImg, pImg, nImg;
+	numImg = 40;
+	if (imgNum == 1)
+		pImg = numImg;
+	else
+		pImg = parseInt(imgNum) - 1;
+
+	if (imgNum == numImg)
+		nImg = 1;
+	else
+		nImg = parseInt(imgNum) + 1;
+
+	var strAds = '<div id="addGalary" class="highslide-gallery">'
+			+ '<a class="highslide" id="gallery-opener2" href="javascript:;" onclick="document.getElementById(\'thumb2\').onclick()">'
+			+ '<img src="img/Adds/thumbs/t' + imgNum + '.jpg" alt="Revolutionary Adds" title="Click to enlarge" /></a></div>'
+			+ '<p style="margin-top:10px;"><a href="javascript:changeThumb(' + pImg + ');">Previous</a>'
+			+ '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'
+			+ '<a href="javascript:changeThumb(' + nImg + ');">Next</a></p>';
+	var changeHidden = "";
+	for (var i = imgNum; i <= numImg; i++) {
+		if (i == imgNum) {
+			changeHidden += '<a id="thumb2" href="images/Adds/o' + i + '.jpg" class="highslide" title="" onclick="return hs.expand(this, config2 )">'
+					+ '<img src="img/Adds/thumbs/t' + i + '.jpg" alt=""/></a>';
+		}
+		else {
+			changeHidden += '<a href="img/Adds/o' + i + '.jpg" class="highslide" title="" onclick="return hs.expand(this, config2 )">'
+					+ '<img src="img/Adds/thumbs/t' + i + '.jpg" alt=""/></a>';
+		}
+	}
+	for (var i = 1; i < imgNum; i++) {
+		changeHidden += '<a href="img/Adds/o' + i + '.jpg" class="highslide" title="" onclick="return hs.expand(this, config2 )">'
+				+ '<img src="img/Adds/thumbs/t' + i + '.jpg" alt=""/></a>';
+
+	}
+	//strAds+='</div>';
+	document.getElementById("printAdds").innerHTML = strAds;
+}
+	
+	
+	function killsession() {
+            Session.Clear();
+            //Session.Abandon();
+ 
+ }
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+	
+	

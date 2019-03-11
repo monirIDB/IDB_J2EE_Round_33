@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			function m1(){
+				var e=document.getElementById("tf1");
+				var e1=document.getElementById("tf2");
+				var e2=document.getElementById("tf3");
+				var v1=e.value;
+				var v2=e1.value;
+					e2.value=v1+"\n"+v2;
+			}
+			function m2(){
+				document.getElementById("tf1").value="Mohammad Moniruzzaman";
+				document.getElementById("tf2").value="1224897";
+				
+			}
+			function m3(){
+				document.getElementById("tf1").style.color="red";
+				document.getElementById("tf2").style.color="red";
+				document.getElementById("tf1").style.backgroundColor="green";
+				document.getElementById("tf2").style.backgroundColor="yellow";
+				document.getElementById("tf3").style.backgroundColor="pink";
+			}
+		</script>
+	</head>
+	<body>
+	<fieldset style="width:300px;  margin-top:200px; margin-left:300px; border-color:red; background-color:yellow;">
+		<legend style="margin-left:100px;">Work with JavaScript</legend>
+		<table style="background-color:#F2F4FF;">
+			<tr>
+				<td>Name</td>
+				<td>:</td>
+				<td><input type="text" id="tf1" name="n1"/></td>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td>:</td>
+				<td><input type="text" id="tf2" name="n2"/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><input type="submit" value="click" onclick="m1()" onmouseover="m2()" onmouseout="m3()" style="width:100px; height:40px; font-size:28px;" /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><textarea cols="40" rows="7" id="tf3"></textarea></td>
+			</tr>
+		</table>
+	</fieldset>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			var a=parseInt(window.prompt("Input First value"));
+			var b=parseInt(window.prompt("Input Sceond value"));
+			var ar=new Array();
+			ar[0]=a;
+			ar[1]=b;
+			if(ar[0]>ar[1]){
+				var c=0;
+				c=ar[0];
+				ar[0]=ar[1];
+				ar[1]=c;
+			}
+			document.write("<br/>Out put after swap<br/>");
+			document.write(ar[0]+"<br/>"+ar[1]);
+		</script>
+	</body>
+</html>

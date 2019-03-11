@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			function m1(){
+				var e=document.getElementById("tf1");
+				var e1=document.getElementById("tf2");
+				var e2=document.getElementById("tf3");
+				var e3=document.getElementById("tf4");
+				var e4=document.getElementById("tf5");
+				var e5=document.getElementById("tf6");
+				var v1=e.value;
+				var v2=e1.value;
+				var v3=e2.value;
+				var v4=e3.value;
+				var v5=e4.value;
+					e5.value=v1+"\n"+v2+"\n"+v3+"\n"+v4+"\n"+v5;
+			}
+		</script>
+	</head>
+	<body>
+			Name:<input type="text" id="tf1" name="n1"/><br/>
+			ID:<input type="text" id="tf2" name="n2"/><br/>
+			E-mail:<input type="text" id="tf3" name="n3"/><br/>
+			Class:<input type="text" id="tf4" name="n4"/><br/>
+			Section:<input type="text" id="tf5" name="n5"/><br/>
+			<textarea cols="40" rows="7" id="tf6"></textarea>
+			<input type="submit" value="click" onclick="m1()"/>
+	</body>
+</html>

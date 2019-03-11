@@ -1,0 +1,14 @@
+public class E1Q10{
+	public static void main(String[] args){
+		int a=0;
+		int b=1;
+		int n=1;
+		for(int i=0; i<9; i++){
+			System.out.println(n);
+			n=a+b;
+			a=b;
+			b=n;
+			
+		}
+	}
+}

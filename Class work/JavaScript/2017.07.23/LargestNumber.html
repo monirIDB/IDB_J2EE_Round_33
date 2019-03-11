@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			var ar=[7,2,1,8,9,4];
+			for(j=0;j<ar.length-1;j++){
+				for(i=0;i<ar.length-1;i++){
+			
+					if(ar[i]>ar[i+1]){
+						var c=0;
+						c=ar[i];
+						ar[i]=ar[i+1];
+						ar[i+1]=c;
+					}
+				}
+			}
+			document.write("The largest number in the array is "+ar[ar.length-1]+"<br/>");
+			
+		</script>
+	</body>
+</html>

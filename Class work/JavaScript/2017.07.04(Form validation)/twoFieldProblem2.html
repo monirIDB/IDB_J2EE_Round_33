@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>Name</td>
+				<td>:</td>
+				<td><input type="text" id="d1"  name="n1"/></td>
+			</tr>
+			<tr>
+				<td>id</td>
+				<td>:</td>
+				<td><input type="text" id="d2"  name="n2"/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><textarea cols="40" rows="3" id="d3"></textarea><br/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><input type="submit" value="click" onclick="main()"/></td>
+			<tr>
+		</table>
+		<script>
+		function main(){
+			var b=document.getElementById("d1").value;
+			var f=document.getElementById("d2").value;
+			if(m1(b) & m2(f)){
+				document.getElementById("d3").value=b+"\n"+f;
+			}
+			
+		}
+			function m1(c){
+				var a=/^[a-z]+$/;
+				if(c.match(a)){
+					
+					return true;
+					
+				}else{
+					alert("Incorrect");
+					return false;
+					
+				}
+			}
+			function m2(g){
+				var k=/^[0-9]+$/;
+				if(g.match(k)){
+					
+					return true;
+					
+				}else{
+					alert("Incorrect");
+					return false;
+					
+				}
+			}
+			
+		</script>
+	</body>
+</html>

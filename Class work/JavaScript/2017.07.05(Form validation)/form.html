@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+			<form>
+				<fieldset><legend>Student Info</legend>
+				<table>
+					<tr>
+						<td>email</td>
+						<td>:</td>
+						<td><input type="text" id="a1"/></td>
+					</tr>
+					<tr>
+						<td>password</td>
+						<td>:</td>
+						<td><input type="password" id="a2"/></td>
+					</tr>
+					<tr>
+						<td>Round</td>
+						<td>:</td>
+						<td>
+							<select id="a3">
+								<option>Select</option>
+								<option>31</option>
+								<option>32</option>
+								<option>33</option>
+							</select>
+						
+						</td>
+					</tr>
+					<tr>
+						<td>Subject</td>
+						<td>:</td>
+						<td>
+						<input type="checkbox" name="a4" value="CSS"/>CSS
+						<input type="checkbox" name="a4" value="HTML"/>HTML
+						<input type="checkbox" name="a4" value="J2EE"/>J2EE
+						</td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td>:</td>
+						<td>
+						<input type="radio" name="a5" value="Male"/> Male <input type="radio" name="a5" value="Female"/>Female
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td><input type="submit" value="go" onclick="m1()"/></td>
+					</tr>
+				</table>
+				
+				</fieldset>
+			</form>
+			<script>
+				function m1(){
+					var b1=document.getElementById("a1").value;
+					var b2=document.getElementById("a2").value;
+					var b3=document.getElementById("a3").value;
+					var b4=document.getElementsByName("a4");
+					var b5=document.getElementsByName("a5");
+					
+					if(m2(b1)& m3(b2)& m4(b3)& m5(b4)& m6(b5)){
+					x=window.open();
+					x.document.write(b1+"<br/>"+b2"<br/>"+b3"<br/>"+cs"<br/>"+rs);
+					x.document.close();
+					}
+				}
+				function m2(b1){
+				var p=/^[a-z]+\@[a-z]+\.[a-z]{2,3}$/;
+					if(b1.match(p)){
+					return true;
+					}else{
+					alert("email not ok");
+					return false
+					}
+				}
+				function m3(b2){
+				var p=/^[0-9]{6,8}$/;
+					if(b2.match(p)){
+					return true;
+					}else{
+					alert("pw not ok");
+					return false
+					}
+				}				
+				function m4(b3){
+				var p=/^[0-9]+$/;
+					if(b3.match(p)){
+					return true;
+					}else{
+					alert("round not ok");
+					return false;
+					}
+				}
+				var cs=[];
+				function m5(b4){
+				cs.length=0;
+					for(i=0; i<b4.length;i++){
+						if(b4[i].checked){
+						cs.push(b4[i].value);
+						}
+					}
+					if(cs.length<1){
+					alert("must select subject");
+					return false;
+					}else{
+					return true;
+					}
+				}
+				var rs=[];
+				function m6(b5){
+				rs.length=0;
+				for(i=0;i<b5.length;i++){
+					if(b5[i].checked){
+					rs.push(b5[i].value){
+					break
+					}
+					}
+				}
+				if(rs.length<1){
+				alert("gender not ok");
+				return false;
+				}else{
+				return true;
+				}
+				}
+			</script>
+	</body>
+
+</html>

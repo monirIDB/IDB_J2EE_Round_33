@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>Email</td>
+				<td>:</td>
+				<td><input type="text" id="id1"></input></td>
+			</tr>
+			<tr>
+				<td>Round</td>
+				<td>:</td>
+				<td>
+					<select id="id2">
+						<option>Round33</option>
+						<option>Round32</option>
+						<option>Round31</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Skill</td>
+				<td>:</td>
+				<td>
+					<input type="checkbox" name="skill" value="HTML">HTML</input>
+					<input type="checkbox" name="skill" value="CSS">CSS</input>
+					<input type="checkbox" name="skill" value="WPSI">WPSI</input>
+				</td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>:</td>
+				<td>
+					<input type="radio" name="gender" value="Female">Female</input>
+					<input type="radio" name="gender" value="Male">Male</input>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Go" onClick="m1()"></input></td>
+			</tr>
+		</table>
+		
+		
+		<script>
+			function m1(){
+				var aa=document.getElementById("id1").value;
+				var bb=document.getElementById("id2").value;
+				var cc=document.getElementsByName("skill");
+				var dd=document.getElementsByName("gender");
+				if(f1(aa)& f2(bb)&f3(cc)&f4(dd)){
+					w=window.open("","new","height=300,width=300");
+					w.document.write(aa+"<br/>"+bb+"<br/>"+rs+"<br/>"+rd);
+					w.document.close();
+				}
+			}
+			function f1(mm){
+				var pattern=/^[a-z0-9]+\@[a-z]+\.[a-z]{2,3}$/;
+				if(mm.match(pattern)){
+					alert("Email correct");
+					return true;
+				}else{
+					alert("Email incorrect");
+					return false;
+				}
+			}
+			function f2(nn){
+				var pattern=/^[A-Za-z0-9]+$/;
+				if(nn.match(pattern)){
+					alert("Round correct");
+					return true;
+				}else{
+					alert("Round incorrect");
+					return false;
+				}
+			}
+			var rs=[];
+			function f3(pp){
+				rs.length=0;
+				for(i=0;i<pp.length;i++){
+					if(pp[i].checked){
+						rs.push(pp[i].value);
+						break;
+					}
+
+				}
+				if(rs.length<1){
+					alert("invalid")
+					return false;
+				}
+				else{
+					 return true;
+					}
+			}
+			
+			var rd=[];
+			function f4(radio){
+				rd.length=0;
+				for(i=0;i<radio.length;i++){
+					if(radio[i].checked){
+						rd.push(radio[i].value);
+						
+					}
+
+				}
+				if(rd.length<1){
+					alert("invalid")
+					return false;
+				}
+				else{
+					 return true;
+					}
+			}
+			
+		</script>
+	</body>
+</html>

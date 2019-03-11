@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			//var b=parseInt(window.prompt("Enter value"));
+			var ar=new Array();
+			
+			for(m=0;m<5;m++){
+				var b=parseInt(window.prompt("Enter value"));
+				ar[m]=b;}
+			for(i=0;i<ar.length-1;i++){
+				for(j=0;j<ar.length-1;j++){
+			
+					if(ar[j]<ar[j+1]){
+						var c=0;
+						c=ar[j];
+						ar[j]=ar[j+1];
+						ar[j+1]=c;
+					}
+				}
+
+			}
+			var result=ar[0]+ar[ar.length-1];
+			document.write("Maximum Number is:   "+ar[0]);
+			document.write("<br/>Minimum Number is:   "+ar[ar.length-1]);
+			document.write("<br/>Summation of Maximum and Minimum number is:  "+result);
+		</script>
+	</body>
+</html>

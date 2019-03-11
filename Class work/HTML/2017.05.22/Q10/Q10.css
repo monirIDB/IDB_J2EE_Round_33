@@ -1,0 +1,23 @@
+.a{
+	list-style-type:none;
+}
+.a:before{
+	content:"\2463";
+	color:red;
+	display:inline-block;
+	width:1em;
+	margin-left:-1em;
+}
+.b{
+	list-style:none;
+}
+.b:before{
+	content:"\25AA";
+	color:blue;
+	display:inline-block;
+	width:1em;
+	margin-left:-1em;
+}
+#o1{
+	list-style-type:upper-alpha;
+}

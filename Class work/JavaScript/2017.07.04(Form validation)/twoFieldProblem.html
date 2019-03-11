@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		Name:<input type="text" id="d1"  name="n1"/>
+		id:<input type="text" id="d2"  name="n2"/>
+		<input type="submit" value="click" onclick="main()"/>
+		<script>
+		function main(){
+			var b=document.getElementById("d1").value;
+			var f=document.getElementById("d2").value;
+			m1(b);
+			m2(f);
+			
+		}
+			function m1(c){
+				var a=/^[a-z]+$/;
+				if(c.match(a)){
+					alert("Correct");
+					return true;
+					
+				}else{
+					alert("Incorrect");
+					return false;
+					
+				}
+			}
+			function m2(g){
+				var k=/^[0-9]+$/;
+				if(g.match(k)){
+					alert("Correct");
+					return true;
+					
+				}else{
+					alert("Incorrect");
+					return false;
+					
+				}
+			}
+			
+		</script>
+	</body>
+</html>

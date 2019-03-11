@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		Name:<input type="text" id="d1"/><br/>
+		District:<select id="d2">
+			<option>Please Select your District</option>
+			<option>Dhaka</option>
+			<option>Sunamganj</option>
+			<option>Khulna</option>
+			<option>Barisal</option>
+		</select><br/>
+		<input type="submit" value="submit" onclick="m1()"/>
+		<input type="submit" value="close" onclick="m2()"/>
+		<script>
+			var w="";
+			function m1(){
+				var a=document.getElementById("d1").value;
+				var b=document.getElementById("d2").value;
+				if(m3(a) & m4(b)){
+					w=window.open("","WindowName","width=300 height=300");
+					w.document.write(a+b);
+					w.document.close();
+				}
+			}
+			function m2(){
+				w.window.close();
+			}
+			function m3(a){
+				var pat=/^[A-Za-z0-9]{4,15}$/;
+				if(a.match(pat)){
+					alert("Name is ok");
+				}else{
+					alert("name is Not ok");
+				}
+			}
+			function m4(b){
+				var pat=/^[A-Za-z0-9]{4,15}$/;
+				if(b.match(pat)){
+					alert("District is ok");
+				}else{
+					alert("District is Not ok");
+				}
+			}
+			
+		</script>
+	</body>
+</html>

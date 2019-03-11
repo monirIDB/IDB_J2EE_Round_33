@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		
+			<table>
+				
+				<tr>
+					<td>Gender</td>
+					<td>:</td>
+					<td><input type="radio" name="gender" value="male"/>Male
+					<input type="radio" name="gender" value="female"/>Female</td>
+				</tr>
+				
+				<tr>
+					<td></td>
+					<td></td>
+					<td><input type="submit" id="f1" value="submit" onclick="m()" />&nbsp;&nbsp;&nbsp;
+					<input type="submit" id="f2" value="close" onclick="cls()" /></td>
+				</tr>
+			
+			</table>
+			
+		<script language="javascript">
+			var rselected="";
+			function m(){
+				var radiogroup=document.getElementsByName("gender");
+				if(m1(radiogroup)){
+				w=window.open(" ","new","width=300,height=300");
+				w.document.write(rselected);
+				w.document.close();
+			  }else{
+			  w=window.open(" ","new","width=300,height=300");
+				w.document.write("not ok");
+			  }
+			}
+			function cls(){
+			w.close();
+			}
+			
+			
+			function m1(radio){
+			   
+			   for(i=0;i<radio.length;i++){
+				   if(radio[i].checked) {
+					   rselected=radio[i].value;
+					   break;
+					}
+				}
+					if(rselected.length<1){
+					return false
+					}else{
+				
+					return true
+					}
+				
+			}
+    </script>
+			
+			
+		
+	</body>
+</html>

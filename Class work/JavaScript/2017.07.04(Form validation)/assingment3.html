@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		Batch ID:<input type="text" id="d1"/>
+				 <input type="submit" value="submit" onclick="m1()" name="n1"/>
+		<script>
+			function m1(){
+				var b=document.getElementById("d1").value;
+				m2(b);
+				
+			}
+			function m2(c){
+				var a=/^[a-z]+$/;
+				if(c.match(a)){
+					window.alert("OK");
+					
+				}else{
+					window.alert("not correct");
+					
+				}
+			}
+		</script>
+	</body>
+</html>
