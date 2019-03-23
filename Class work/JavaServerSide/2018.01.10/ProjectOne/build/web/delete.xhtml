@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+       <h:form>
+            <h:panelGrid columns="3">
+                <h:outputLabel value="Pro Id"/>
+                <h:outputLabel value=":"/>
+                <h:selectOneMenu value="#{product.selectedId}">
+                    <f:selectItems value="#{product.idList}"/>
+                    <f:ajax render="d1 d2 d3 d4" event="change" listener="#{product.ajaxList()}"/>
+                </h:selectOneMenu>
+                
+                <h:outputLabel value="Pro Name"/>
+                <h:outputLabel value=":"/>
+                <h:inputText value="#{product.name}" id="d1"/>
+                
+                <h:outputLabel value="Stock"/>
+                <h:outputLabel value=":"/>
+                <h:inputText value="#{product.stock}" id="d2"/>
+                
+                <h:outputLabel value="Price"/>
+                <h:outputLabel value=":"/>
+                <h:inputText value="#{product.price}" id="d3"/>
+                
+                <h:outputLabel value="Total"/>
+                <h:outputLabel value=":"/>
+                <h:inputText value="#{product.total}" id="d4"/>
+                
+            </h:panelGrid>
+           <h:commandButton value="Delete" actionListener="#{product.doRemove()}" action="index.xhtml"/>
+        </h:form>
+    </h:body>
+</html>
+

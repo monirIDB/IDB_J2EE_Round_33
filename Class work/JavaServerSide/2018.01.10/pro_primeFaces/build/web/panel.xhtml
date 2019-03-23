@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+        <p:panel header="PrimeFaces" footer="TheCookbook" closable="true" toggleable="true" closeTitle="Close" toggleTitle="minimiz">
+            <h:outputText value="Open Source Primefaces is hte leading JSF Component Suite in hte industry, which is adopted widely
+                          and being used in production ready projects around the globe."/>
+        </p:panel>
+        <p:panel header="PrimeFaces" footer="TheCookbook" closable="true" toggleable="true">
+            <h:outputText value="Open Source Primefaces is hte leading JSF Component Suite in hte industry, which is adopted widely
+                          and being used in production ready projects around the globe."/>
+        </p:panel>
+        <p:panel id="panelWithMenu" header="PrimeFaces" footer="The Cookbook" widgetVar="panel" closable="true" toggleable="true" >
+            <h:outputText value="Open Source Primefaces is the leading JSG component suite inthe insdustruy, which is adopted widely and being
+                          used in production ready projects around the globe."/>
+            <f:facet name="options">
+                <p:menu>
+                    <p:submenu label="Settings">
+                        <p:menuitem value="Toggle" url="#" icon="ui-icon-newwin" onclick="panel.toggle()"/>
+                        <p:menuitem value="Remove" url="#" icon="ui-icon-close" onclick="panel.close()"/>
+                    </p:submenu>
+                </p:menu>
+            </f:facet>
+            <p:growl id="growl" showDetail="true" sticky="true"/>
+            <p:ajax event="close" listener="#{panelBean.onClose(event)}" update="growl"/>
+           
+        </p:panel>
+        </h:form>
+    </h:body>
+</html>
+

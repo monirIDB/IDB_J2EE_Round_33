@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form id="form">           
+    <p:growl id="msgs" showDetail="true" />
+ 
+    <h3 style="margin-top:0">Basic</h3>
+     <p:growl id="growl" showDetail="true" sticky="true"/>
+    <p:accordionPanel>
+       
+        <p:ajax event="tabChange" listener="#{tabbedview.m1(e)}" update=":form:growl"/>
+        <p:ajax event="tabClose" listener="#{tabbedview.m2(m)}" update=":form:growl"/>
+        <p:tab title="Godfather Part I">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="images/Desert.jpg"  height="100" width="100"/>
+                <h:outputText
+                    value="The story begins as Don Vito Corleone..." />
+            </h:panelGrid>
+        </p:tab>
+        <p:tab title="Godfather Part II">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="images/Desert.jpg"  height="100" width="100"/>
+                <h:outputText value="Francis Ford Coppola's legendary..." />
+            </h:panelGrid>
+        </p:tab>
+        <p:tab title="Godfather Part III">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="images/Desert.jpg" height="100" width="100"/>
+                <h:outputText value="After a break of more than 15 years..." />
+            </h:panelGrid>
+        </p:tab>
+    </p:accordionPanel>
+ 
+    <h3>Multiple Selection</h3>
+    <p:accordionPanel multiple="true">
+        <p:tab title="Godfather Part I">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="images/Desert.jpg"  height="100" width="100"/>
+                <h:outputText
+                    value="The story begins as Don Vito Corleone..." />
+            </h:panelGrid>
+        </p:tab>
+        <p:tab title="Godfather Part II">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="images/Desert.jpg"  height="100" width="100"/>
+                <h:outputText value="Francis Ford Coppola's legendary..." />
+            </h:panelGrid>
+        </p:tab>
+        <p:tab title="Godfather Part III">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="images/Desert.jpg"  height="100" width="100"/>
+                <h:outputText value="After a break of more than 15 years...." />
+            </h:panelGrid>
+        </p:tab>
+    </p:accordionPanel>
+ 
+    <h3>On-Demand Loading</h3>
+    <p:accordionPanel dynamic="true" cache="true">
+        <p:tab title="Godfather Part I">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="images/Desert.jpg"  height="100" width="100"/>
+                <h:outputText
+                    value="The story begins as Don Vito Corleone..." />
+            </h:panelGrid>
+        </p:tab>
+        <p:tab title="Godfather Part II">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="images/Desert.jpg"  height="100" width="100"/>
+                <h:outputText value="Francis Ford Coppola's legendary..." />
+            </h:panelGrid>
+        </p:tab>
+        <p:tab title="Godfather Part III">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="images/Desert.jpg"  height="100" width="100"/>
+                <h:outputText value="After a break of more than 15 years..." />
+            </h:panelGrid>
+        </p:tab>
+    </p:accordionPanel>
+ 
+    <h3>Change Event</h3>
+    <p:accordionPanel>
+        <p:ajax event="tabChange" listener="#{tabbedView.onTabChange}" update=":form:msgs" />
+        <p:ajax event="tabClose" listener="#{tabbedView.onTabClose}" update=":form:msgs" />
+ 
+        <p:tab title="Godfather Part I">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="images/Desert.jpg"  height="100" width="100"/>
+                <h:outputText
+                    value="The story begins as Don Vito Corleone..." />
+            </h:panelGrid>
+        </p:tab>
+        <p:tab title="Godfather Part II">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="images/Desert.jpg" height="100" width="100"/>
+                <h:outputText value="Francis Ford Coppola's legendary..." />
+            </h:panelGrid>
+        </p:tab>
+        <p:tab title="Godfather Part III">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="images/Desert.jpg"  height="100" width="100"/>
+                <h:outputText value="After a break of more than 15 years..." />
+            </h:panelGrid>
+        </p:tab>
+    </p:accordionPanel>
+ 
+    
+</h:form>
+    </h:body>
+</html>
+

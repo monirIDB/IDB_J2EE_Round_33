@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="be3fd5a0-dcd0-4371-8ecc-8c097341def4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     actor.`actor_id` AS actor_actor_id,
+     actor.`first_name` AS actor_first_name,
+     actor.`last_name` AS actor_last_name,
+     actor.`last_update` AS actor_last_update
+FROM
+     `actor` actor]]>
+	</queryString>
+	<field name="actor_actor_id" class="java.lang.Integer"/>
+	<field name="actor_first_name" class="java.lang.String"/>
+	<field name="actor_last_name" class="java.lang.String"/>
+	<field name="actor_last_update" class="java.sql.Timestamp"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="129" y="14" width="232" height="51" forecolor="#3333FF" uuid="aa023d0d-b22a-44d7-b3ef-d5b0c1e24236"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[This is Report Title]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="1" width="52" height="20" uuid="4aeba11b-b83e-4a7b-b2cd-267a10ecd178"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="3" width="89" height="20" uuid="56cd3f0d-b8ea-4bb9-aad4-6fc74ad207ce"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[First Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="100" height="20" uuid="6ddd4b7d-5cb6-46fd-902f-996e2272836c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Last Name]]></text>
+			</staticText>
+			<line>
+				<reportElement x="165" y="0" width="1" height="23" uuid="3984aa7d-774a-49ea-9232-b7a840e6b41d"/>
+			</line>
+			<line>
+				<reportElement x="52" y="0" width="1" height="23" uuid="21320546-6a64-4bde-bab7-5bd9f4530a18"/>
+			</line>
+			<staticText>
+				<reportElement x="293" y="1" width="100" height="20" uuid="84da25d4-197b-4eb0-8ee9-66e08a8f06e1"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Last Update]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="52" height="20" uuid="d9db8ee3-5c4a-432a-8662-f63f7232d497"/>
+				<textFieldExpression><![CDATA[$F{actor_actor_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="65" y="0" width="100" height="20" uuid="0bf7bcaa-3df5-466e-8e22-8bdfbf5abdf4"/>
+				<textFieldExpression><![CDATA[$F{actor_first_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="2" width="100" height="20" uuid="2bf514a0-92c4-4cd9-a72b-6363582cdaa5"/>
+				<textFieldExpression><![CDATA[$F{actor_last_name}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="22" width="280" height="1" forecolor="#FF6666" uuid="96897e01-cc2b-415a-bcd0-bae7fcc49d3d">
+					<property name="net.sf.jasperreports.export.pdf.tag.table"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="165" y="0" width="1" height="23" uuid="cdc15b3e-cf96-4c15-b1e2-28fb96c5f651"/>
+			</line>
+			<line>
+				<reportElement x="52" y="0" width="1" height="23" uuid="91b8f217-cadd-4139-a780-4ca16b8f8211"/>
+			</line>
+			<textField>
+				<reportElement x="293" y="3" width="100" height="20" uuid="76e7c7c3-0f4d-4fbc-8df1-c62623073d7f"/>
+				<textFieldExpression><![CDATA[$F{actor_last_update}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
