@@ -1,0 +1,13 @@
+SMAP
+copyright_tag.java
+JSP
+*S JSP
+*F
++ 0 copyright.tag
+WEB-INF/tags/copyright.tag
+*L
+5,5:58
+9,4:62
+12:65
+13:66,3
+*E

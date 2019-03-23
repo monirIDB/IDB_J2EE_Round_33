@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="2">
+                <h:outputText value="Product ID :"></h:outputText>
+                <h:selectOneMenu value="#{product.pid}">
+                    <f:selectItems value="#{product.showAllId}"></f:selectItems>
+                    <f:ajax render="d1 d2 d3 d4" event="change" listener="#{product.findaProduct()}"></f:ajax>
+                </h:selectOneMenu>
+                
+                <h:outputText value="Product Name :"></h:outputText>
+                <h:inputText value="#{product.pname}" id="d1"></h:inputText>
+                
+                <h:outputText value="Product Stock :"></h:outputText>
+                <h:inputText value="#{product.stock}" id="d2"></h:inputText>
+                
+                <h:outputText value="Product Unit Price :"></h:outputText>
+                <h:inputText value="#{product.unitprice}" id="d3"></h:inputText>
+                
+                <h:outputText value="Product Total Price :"></h:outputText>
+                <h:inputText value="#{product.totalprice}" id="d4"></h:inputText>
+            </h:panelGrid>
+            <h:commandButton value="Update" action="show.xhtml" actionListener="#{product.doUpdate()}"></h:commandButton>
+            <h:commandButton value="Main Page" action="main.xhtml"></h:commandButton>
+        </h:form>
+    </h:body>
+</html>
+

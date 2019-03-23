@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="3">
+                <h:outputText value="Product ID"/>
+                <h:outputText value=":"/>
+                <h:inputText value="#{product02.id}"/>
+                
+                <h:outputText value="Product Name"/>
+                <h:outputText value=":"/>
+                <h:inputText value="#{product02.name}"/>
+                
+                <h:outputText value="Product Price"/>
+                <h:outputText value=":"/>
+                <h:inputText value="#{product02.price}"/>
+                
+                <h:outputText value="Product Stock"/>
+                <h:outputText value=":"/>
+                <h:inputText value="#{product02.stock}"/>
+                
+                <h:outputText value="Total Price"/>
+                <h:outputText value=":"/>
+                <h:inputText value="#{product02.totalPrice}"/>
+            </h:panelGrid>
+            <h:commandButton value="Insert" actionListener="#{product02.doSave()}" action="showPage.xhtml"/>
+            <h:commandButton action="mainPage.xhtml" value="Home"/>
+        </h:form>
+    </h:body>
+</html>
+

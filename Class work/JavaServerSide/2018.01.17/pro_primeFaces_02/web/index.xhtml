@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        Hello from Facelets
+        <br />
+        <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
+        <h:form>
+            <p:spinner id="a" value="#{primeFaces.num}"/>
+            <h:panelGrid columns="4" cellpadding="5">
+                <h:outputLabel for="name" value="#{primeFaces.num}"  id="display" style="font-weight:bold" />
+                
+                <p:commandButton value="Submit" update="display s a" icon="ui-icon-check"/>
+            <h:outputText id="s" value="#{primeFaces.num}" />
+    </h:panelGrid>
+        </h:form>
+        
+        <h:form>
+            set ratio <h:inputText id="basicSlider"  style="text-align: right;" /> %
+             
+            <p:slider for="basicSlider" minValue="23" maxValue="50" step="2" id="a"/>
+           <p:graphicImage name="images/a.jpg" width="200" height="120"/>
+           <span> </span><span> </span><h:graphicImage name="images/a.jpg" width="200" height="120"/>
+        </h:form>
+       
+    </h:body>
+</html>
+

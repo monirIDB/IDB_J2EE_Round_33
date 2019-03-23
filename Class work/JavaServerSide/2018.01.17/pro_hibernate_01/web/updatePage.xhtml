@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+       <h:form>
+            <h:panelGrid columns="2">
+                <h:outputText value="Id :"/>
+                
+                <h:selectOneMenu value="#{studant.id}">
+                    <f:selectItems value="#{studant.showAllId}"/>
+                    <f:ajax event="change" render="name email birthdate" listener="#{studant.findaStudant()}"/>
+                </h:selectOneMenu>
+                
+                
+                <h:outputText value="Name :"/>
+                <h:inputText value="#{studant.name}" id="name"/>
+                <h:outputText value="Email :"/>
+                <h:inputText value="#{studant.email}" id="email"/>
+                <h:outputText value="Birth Date :"/>
+                <h:inputText value="#{studant.birthdate}" id="birthdate"/>
+            </h:panelGrid>
+             <h:commandButton value="Update" action="showPage.xhtml" actionListener="#{studant.doUpdate()}"/>
+              <h:commandButton value="Home" action="mainPage.xhtml" />
+        </h:form>
+    </h:body>
+</html>
+

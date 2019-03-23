@@ -1,0 +1,17 @@
+SMAP
+box_tag.java
+JSP
+*S JSP
+*F
++ 0 box.tag
+WEB-INF/tags/box.tag
+*L
+5,5:82
+9,4:86
+13,3:90,3
+16,3:99
+19:102,6
+20,5:108
+24:112
+25:113,3
+*E
