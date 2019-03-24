@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/pro_stud_reg">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="20" maxIdle="10" maxWait="-1" name="myJndi" password="apcl123456" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/db_login?zeroDateTimeBehavior=convertToNull" username="root"/>
+  <ResourceLink global="myJndi" name="myReff" type="javax.sql.DataSource"/>
+</Context>
