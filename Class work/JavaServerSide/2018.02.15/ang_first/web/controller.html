@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="a" ng-controller="controll">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="angular.min.js"></script>
+    </head>
+    <body>
+        <div>
+
+            Your country is: {{contry}}
+            Language is: {{lang}}
+            
+            <table>
+                <tr><td>Enter num<input type="text" id="d1"/></td></tr>
+                <tr><td><input type="submit" onclick="f1()" value="GO"/></td></tr>
+                <tr><td><h1>{{x}}</h1></td></tr>
+            </table>
+        </div>
+        <script>
+                    var m1 = angular.module("a", []);
+                    m1.controller("controll", function ($scope) {
+
+                        $scope.contry = "Bangladesh";
+                        $scope.lang = "Bangla";
+                        $scope.f1=function (){
+                            $scope.x=document.getElementById("d1").value;
+                        }
+                    });
+
+        </script>
+    </body>
+</html>

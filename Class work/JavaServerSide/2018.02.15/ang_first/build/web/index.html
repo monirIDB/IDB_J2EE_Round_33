@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="angular.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <p>{{3+4}}</p>
+            <h1>{{5+7}}</h1>
+            <h2>{{3*4}}</h2>
+            <h3>{{6/3}}</h3>
+            <h3>{{4-2*6+12/3*4}}</h3>
+            
+            
+            Name: <input type="text" ng-model="v1" placeholder="Name please" ng-keyup=""/>
+            <br> Your name is: <input type="text" value="{{v1}}" placeholder="name"/>
+            <br>Your name is: <input type="text" ng-model="v1"/>
+            Output: {{v1}}
+            Output: {{v1}}
+            <h1 ng-bind="v1" style="background-color: royalblue; color: bisque"></h1>
+            <table>
+                <tr>
+                    <td><input type="number" ng-model="b1"/></td>
+                    <td><input type="number" ng-model="b2"/></td>
+                    <td><p>{{b1+b2}}</p></td>
+                    <td><h1>{{b1*b2}}</h1></td>
+                    <td><input type="text" value="{{b1+b2}}"/></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p ng-init="g1='monir'"></p>
+            <h1 ng-bind="g1"></h1>
+            
+            <p ng-init="firstName='Monir'; lastName=' Zaman'"></p>
+            <h1 ng-bind="firstName + lastName" ></h1>
+          
+        </div>
+    </body>
+</html>
