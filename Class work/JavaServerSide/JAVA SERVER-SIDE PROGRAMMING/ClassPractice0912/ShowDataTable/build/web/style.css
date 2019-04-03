@@ -1,0 +1,25 @@
+table,tr,td,th{border: 1px solid red; border-collapse: collapse; margin: 0px auto;color: green; padding: 5px;} 
+table tr:nth-child(odd){
+    background-color: #92f2f2; 
+
+}
+table tr:nth-child(even){
+    background-color: #ffffff;   
+}
+caption{
+    background-color: chartreuse;  
+}
+table td:nth-child(odd){
+    background-color: #92f2f2; 
+
+}
+table th:nth-child(odd){
+    background-color: #92f2f2; 
+
+}
+table td:nth-child(even){
+    background-color: #ffffff;   
+}
+/*table{
+  margin-left: 35%;
+}*/

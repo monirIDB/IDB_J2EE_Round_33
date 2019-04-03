@@ -1,0 +1,89 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table{
+                background-color: green;
+               margin: auto;
+               color: white;
+            }
+            legend{
+                text-align: center;
+                color: black;
+                
+            }
+            fieldset{
+                background-color: yellowgreen;
+                margin-left:200px;
+                margin-right: 200px
+                
+            }
+            #b1{
+                margin-top: 50px;
+            }
+            #e1{
+                margin-right: 20px;
+            }
+            form{
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form method="POST" action="ActionForm.jsp">
+        <fieldset>
+            <legend>Student Information</legend>
+            
+                <table>
+                    <tr>
+                        <td>ID</td>
+                        
+                        <td><input type="text" name="id"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        
+                        <td><input type="password" name="password"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        
+                        <td><input type="email" id="e1" name="email"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                       
+                        <td>
+                            <input type="radio" name="radio" value="Male">Male
+                            <input type="radio" name="radio" value="Female">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                            <td><input type="submit" value="Save"></td>
+                            
+                            <td><a href="ShowStudentInformation.jsp"><input type="button"  value="Show all Student Information"></a></td>
+                            <td><a href="ShowStudentInformationById.jsp" ><input type="button" value="Show Student Information By ID"></a></td>
+                    </tr>
+                    
+                    
+
+                </table>
+            
+        </fieldset>
+            </form>
+
+    </body>
+</html>

@@ -1,0 +1,16 @@
+SMAP
+accessBin_jsp.java
+JSP
+*S JSP
+*F
++ 0 accessBin.jsp
+accessBin.jsp
+*L
+5,13:47
+18:60,10
+19:70
+20,5:72
+24:77
+25,2:78,3
+27,3:84
+*E
