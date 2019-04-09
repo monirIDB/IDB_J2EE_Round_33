@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">dataSaveToFirebase</string>
+    <array name="round">
+        <item>Round 32</item>
+        <item>Round 33</item>
+        <item>Round 34</item>
+        <item>Round 35</item>
+    </array>
+</resources>
