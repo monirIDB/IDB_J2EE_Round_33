@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ProImageView</string>
+    <string name="R.drawable.aaa">bb</string>
+</resources>
